@@ -20,9 +20,13 @@ public class Interfejs {
 			Pattern dataPattern = Pattern.compile("[0-9]{4}\\.[0-9]{2}\\.[0-9]{2}"); 
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd");
 			sdf.setLenient(false);
+			KotDOA kot = new KotDOA();
+			for(int i = 0; i<=1; i++)
+			{
+			
 			Kot kt = new Kot();
 
-
+			
 			
 			do
 			{
@@ -48,13 +52,13 @@ public class Interfejs {
 			kt.setImieOpiekuna(Interfejs.getUser());
 			System.out.println("Podaj Wage ");
 			kt.setWaga(Interfejs.getFloat());		
-			
-			KotDOA kot = new KotDOA();
-			
 			kot.dodajKota(kt);
-			kot.wypiszKota(0);
-
 			
+		}
+			
+			kot.wypiszKota(1);
+
+	
 		}
 	
 	
