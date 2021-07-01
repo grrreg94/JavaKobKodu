@@ -41,16 +41,19 @@ public class Interfejs {
 			}while(kt.wiek == null);
 
 
-	
+
 			System.out.println("Podaj imie kotka ");
 			kt.setImie(Interfejs.getUser());
 			System.out.println("Podaj imie wlasciciela ");
 			kt.setImieOpiekuna(Interfejs.getUser());
 			System.out.println("Podaj Wage ");
-			kt.setWaga(Interfejs.getFloat());	
+			kt.setWaga(Interfejs.getFloat());		
+			
+			KotDOA kot = new KotDOA();
+			
+			kot.dodajKota(kt);
+			kot.wypiszKota(0);
 
-
-			System.out.println(kt.przedstawSie());
 			
 		}
 	
